@@ -1,0 +1,56 @@
+.tw__followCard{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tw__followCard-header{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.tw__followCard-img{
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+}
+.tw__followCard-info{
+    display: flex;
+    flex-direction: column;
+}
+.tw__followCard-email{
+    opacity: 0.6;
+}
+.textFollowing{
+    display: block;
+}
+.stopFollowing{
+    display: none;
+}   
+.tw__followCard-button{
+    cursor: pointer;
+    margin-left: 16px;
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: bold;
+}
+.tw__followCard-button.isFollowing{
+    border: 1px solid #bbb;
+    background-color: transparent;
+    color: #fff;
+    width: 140px;
+}
+.tw__followCard-button.isFollowing:hover{
+    background-color: rgba(95, 10, 10, 0.466);
+    color: red;
+    border: 1px solid red;
+    transition: .3s ease background-color;
+    opacity: 1;
+}
+.tw__followCard-button.isFollowing:hover .textFollowing{
+    display: none;
+}
+.tw__followCard-button.isFollowing:hover .stopFollowing{
+    display: block;
+}
